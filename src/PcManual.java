@@ -1,5 +1,5 @@
 public class PcManual {
-    String text;
+    protected String text;
     @Override
     public String toString() {
         return text;
