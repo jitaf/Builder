@@ -2,8 +2,8 @@ public class Director {
 
     // "Recept" na kancelářské PC.
     // Director NEvytváří produkt přímo (nedělá new Pc()), jen určuje pořadí kroků.
-    // To, co se reálně vytvoří (Pc / PcManual / JSON...), záleží na konkrétní implementaci PcBuilder.
-    public void buildOfficePc(PcBuilder b) {
+    // To, co se reálně vytvoří (Pc / PcManual / JSON...), záleží na konkrétní implementaci IPcBuilder.
+    public void buildOfficePc(IPcBuilder b) {
 
         // Začneme od čistého stavu (builder si připraví nový "rozestavěný" produkt).
         b.reset();
@@ -17,7 +17,7 @@ public class Director {
     }
 
     // "Recept" na herní PC – stejný postup kroků, jen jiné hodnoty.
-    public void buildGamingPc(PcBuilder b) {
+    public void buildGamingPc(IPcBuilder b) {
 
         // Opět začneme od prázdného stavu.
         b.reset();

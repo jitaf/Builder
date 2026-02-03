@@ -6,10 +6,10 @@ public class Main {
         Director d = new Director();
 
         // 1) Builder, který skládá výsledek jako objekt Pc (data, se kterými může program dál pracovat).
-        PcBuilderImpl b1 = new PcBuilderImpl();
+        PcBuilder b1 = new PcBuilder();
 
         // Director provede kroky receptu a volá metody PcBuilder (reset, setCpu, setRamGb, setSsdGb).
-        // To, jak se kroky provedou, určuje konkrétní implementace builderu (tady PcBuilderImpl).
+        // To, jak se kroky provedou, určuje konkrétní implementace builderu (tady PcBuilder).
         d.buildGamingPc(b1);
 
         // Po dokončení receptu si vyzvedneme hotový produkt.

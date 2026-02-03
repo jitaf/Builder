@@ -1,4 +1,4 @@
-public class ManualBuilder implements PcBuilder {
+public class ManualBuilder implements IPcBuilder {
 
     // Interně si postupně skládáme text (manuál) jako řetězec.
     // StringBuilder je efektivní, protože se text často rozšiřuje.
